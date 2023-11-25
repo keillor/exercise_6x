@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Calc from "./Calc";
 
 function Square({ value, onSquareClick }) {
   return (
