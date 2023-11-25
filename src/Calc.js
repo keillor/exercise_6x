@@ -27,7 +27,7 @@ export default function Calc() {
   const [numberA, setNumA] = useState(null);
   const [numberB, setNumB] = useState(null);
   const [operation, setOperation] = useState(null);
-  const [window, setWindow] = useState(0);
+  const [window1, setWindow] = useState(0);
   const [step, setStep] = useState(0);
 
   function handleClick({ value }) {
@@ -112,7 +112,7 @@ export default function Calc() {
 
   return (
     <>
-      <CalcWindow value={window} header={"CALCULATOR"} />
+      <CalcWindow value={window1} header={"CALCULATOR"} />
       <ButtonHolder>
         <div className="button-row">
           <CalcButton
