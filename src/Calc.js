@@ -92,6 +92,8 @@ export default function Calc() {
         case "/":
           newNum = numberA / numberB;
           break;
+        default:
+          break;
       }
 
       setNumB(null);
