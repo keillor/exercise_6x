@@ -1,29 +1,29 @@
 import { useState } from "react";
 
-function CalcButton({ value, clickHandler, styleClass }) {
-  return (
-    <>
-      <button onClick={() => clickHandler({ value })} className={styleClass}>
-        {value}
-      </button>
-    </>
-  );
-}
-
-function CalcWindow({ value, header }) {
-  return (
-    <>
-      <h1>{header}</h1>
-      <div className="window-div">{value}</div>
-    </>
-  );
-}
-
-function ButtonHolder({ children }) {
-  return <div className="button-holder">{children}</div>;
-}
-
 export default function Calc() {
+  function CalcButton({ value, clickHandler, styleClass }) {
+    return (
+      <>
+        <button onClick={() => clickHandler({ value })} className={styleClass}>
+          {value}
+        </button>
+      </>
+    );
+  }
+
+  function CalcWindow({ value, header }) {
+    return (
+      <>
+        <h1>{header}</h1>
+        <div className="window-div">{value}</div>
+      </>
+    );
+  }
+
+  function ButtonHolder({ children }) {
+    return <div className="button-holder">{children}</div>;
+  }
+
   const [numberA, setNumA] = useState(null);
   const [numberB, setNumB] = useState(null);
   const [operation, setOperation] = useState(null);
